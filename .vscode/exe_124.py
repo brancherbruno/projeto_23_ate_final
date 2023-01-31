@@ -58,13 +58,14 @@ while True:
     print(f'{nome} você acertou {total_acerto} pergunta(s) de', len(perguntas), 'pergunta(s).')  
     print()
     print()
-    
+
     sair = str(input(f'{nome} gostaria de sair?')).upper()
-    if sair == 'S':
-        print(f'Obrigado {nome}, até breve.')
-        break
-    elif sair == 'N':
-        continue
-    else:
-        print(f"Você não digitou uma resposta válida, por favor digite S para sair ou N para continuar.")
-        sair = str(input(f'{nome} gostaria de sair?')).upper()
+    while True:
+        if sair == 'S':
+            print(f'Obrigado {nome}, até breve.')
+            break
+        elif sair == 'N':
+            continue
+        else:
+            print(f"Você não digitou uma resposta válida, por favor digite S para sair ou N para continuar.")
+            sair = str(input(f'{nome} gostaria de sair?')).upper()
