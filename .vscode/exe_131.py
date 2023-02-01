@@ -45,3 +45,5 @@ def primeiro_duplicado(inteiros):
 
 for lista in lista_de_listas_de_inteiros:
     print(lista, primeiro_duplicado(lista))
+
+
